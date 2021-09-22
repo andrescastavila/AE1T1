@@ -13,7 +13,7 @@ public class App {
 
 	public static void main(String[] args) {
 		
-Mensaje msg = new Mensaje();
+		Mensaje msg = new Mensaje();
 		
 		msg.nom="Hola Mundo";
 			
