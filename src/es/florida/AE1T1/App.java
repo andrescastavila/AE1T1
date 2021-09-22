@@ -1,12 +1,27 @@
 package es.florida.AE1T1;
 
-import java.util.Scanner;
+
+
+
+
+class Mensaje{
+	String nom;
+}
+
 
 public class App {
 
 	public static void main(String[] args) {
-		String nom = "Mundo";
-		System.out.println("Hola " + nom);
+		
+Mensaje msg = new Mensaje();
+		
+		msg.nom="Hola Mundo";
+			
+		System.out.print(msg.nom);	
+	
+		
+		
+	
 		
 	
 
