@@ -1,5 +1,6 @@
 package es.florida.AE1T1;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 class Mensaje{
@@ -45,8 +46,25 @@ public class App {
 			System.out.print(" "+(i+1)+" Nombre:"+nombres[i]+".");
 		}
 
+		teclado.close();
+		
+		
+		ArrayList<String> nombres2 = new ArrayList<>();
+		
+		nombres2.add(nombres[0]);
+		nombres2.add(nombres[1]);
+		nombres2.add(nombres[2]);
+		nombres2.add(nombres[3]);
+		nombres2.add(nombres[4]);
+		nombres2.add(nombres[5]);
+		
+		for(String noms : nombres2) {
+			System.out.println(noms);
+		}
 		
 
+		
+		
 	}
 
 }
