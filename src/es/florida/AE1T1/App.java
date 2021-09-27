@@ -64,7 +64,21 @@ public class App {
 		
 
 		
+		System.out.println(sumaDePares(5));
 		
 	}
 
+	public static int sumaDePares(int x) {
+		int suma=0;
+		for(var i=1; i<=x; i++) {
+			if(i%2==0) {
+				suma +=i;
+			}
+		}
+		return suma;
+	
+	
+}
+	
+	
 }
