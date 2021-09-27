@@ -67,7 +67,7 @@ public class App {
 		System.out.println(sumaDePares(5));
 		
 		double factorial=1;
-		double numero = 5;
+		double numero = 15;
 		
 		while(numero!=0) {
 			factorial=factorial*numero;
