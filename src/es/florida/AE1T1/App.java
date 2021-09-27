@@ -76,6 +76,11 @@ public class App {
 		System.out.println(factorial);
 		
 		
+		int num[]=rellenarArray(1);
+		imprimirArray(num);
+		
+		
+		
 	}
 
 	public static int sumaDePares(int x) {
@@ -85,10 +90,23 @@ public class App {
 				suma +=i;
 			}
 		}
-		return suma;
+		return suma;	
+	}
 	
+	public static void imprimirArray(int lista[]) {
+		for(int i=0;i<lista.length;i++) {
+			System.out.println(lista[i]);
+		}
+	}
 	
-}
+	public static int [] rellenarArray(int x) {
+		int num[]=new int [10];
+		for(int i=0;i<num.length;i++) {
+			num[i]=x;
+			x++;
+		}
+		return num;
+	}
 	
 	
 }
