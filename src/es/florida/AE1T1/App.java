@@ -66,6 +66,16 @@ public class App {
 		
 		System.out.println(sumaDePares(5));
 		
+		double factorial=1;
+		double numero = 5;
+		
+		while(numero!=0) {
+			factorial=factorial*numero;
+			numero--;
+		}
+		System.out.println(factorial);
+		
+		
 	}
 
 	public static int sumaDePares(int x) {
