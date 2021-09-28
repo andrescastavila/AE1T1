@@ -46,7 +46,7 @@ public class App {
 			System.out.print(" "+(i+1)+" Nombre:"+nombres[i]+".");
 		}
 
-		teclado.close();
+		
 		
 		
 		ArrayList<String> nombres2 = new ArrayList<>();
@@ -81,6 +81,20 @@ public class App {
 		
 		
 		
+		int[] listaNum=new int [5];
+		int suma=0;
+		for(int i=0;i<listaNum.length;i++) {
+			System.out.print("Introduce un numero: ");
+			listaNum[i]=teclado.nextInt();
+			suma+=listaNum[i];
+			
+		}
+		System.out.println("Numeros en orden inverso: ");
+		for(int i = listaNum.length -1;i>=0;i--) {
+			System.out.println("Indice "+(i+1)+" ="+listaNum[i]);
+		}
+		System.out.println("La suma total es: "+suma);
+		
 	}
 
 	public static int sumaDePares(int x) {
@@ -107,6 +121,9 @@ public class App {
 		}
 		return num;
 	}
+	
+	
+	
 	
 	
 }
