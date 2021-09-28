@@ -95,6 +95,16 @@ public class App {
 		}
 		System.out.println("La suma total es: "+suma);
 		
+		
+		String nombreEmpleado="";
+		System.out.print("Dime tu nombre: ");
+		nombreEmpleado=teclado.next();
+		int numeroAnyos;
+		System.out.print("Dime cuantos años llevas trabajando: ");
+		numeroAnyos=teclado.nextInt();
+		System.out.print(nombreEmpleado+" tu trabajo y sueldo es: ");
+		tipoTrabajo(numeroAnyos);
+		
 	}
 
 	public static int sumaDePares(int x) {
@@ -122,7 +132,20 @@ public class App {
 		return num;
 	}
 	
-	
+	public static void tipoTrabajo(int x) {
+		if(x<1) {
+			System.out.print("Desarrollador Junior L1-15000€-18000€");
+		}else if(x<2&&x>1) {
+			System.out.print("Desarrollador Junior L2-18000€-22000€");
+		}else if(x<5&&x>3) {
+			System.out.print("Desarrolador Senior L1-22000€-28000€");
+		}else if(x<8&&x>5) {
+			System.out.print("Desarrolador Senior L2-28000€-36000€");
+		}else {
+			System.out.print("Analista/Arquitecto Salario a convenir en base a rol");
+		}
+		
+	}
 	
 	
 	
